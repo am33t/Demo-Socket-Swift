@@ -1,0 +1,29 @@
+PODS:
+  - CRNotifications (1.1.3)
+  - Realm (3.2.0-beta.3):
+    - Realm/Headers (= 3.2.0-beta.3)
+  - Realm/Headers (3.2.0-beta.3)
+  - RealmSwift (3.2.0-beta.3):
+    - Realm (= 3.2.0-beta.3)
+  - Socket.IO-Client-Swift (13.1.1):
+    - Starscream (~> 3.0.2)
+  - Starscream (3.0.4)
+  - SwiftChart (1.0.1)
+
+DEPENDENCIES:
+  - CRNotifications
+  - RealmSwift (= 3.2.0-beta.3)
+  - Socket.IO-Client-Swift
+  - SwiftChart
+
+SPEC CHECKSUMS:
+  CRNotifications: 887e7a676aa7b8f6684620f96618b6642c531394
+  Realm: 3fbc3ff1304ee1ff2e667463e4d167a6493bd25b
+  RealmSwift: 89d30498adbc7d231617ffdb7c33ee3c2dcc9a40
+  Socket.IO-Client-Swift: f22222913f29801e30ae0df712db663ec096edc2
+  Starscream: f5da93fe6984c77b694366bf7299b7dc63a76f26
+  SwiftChart: ba767a678d568a5ee22d419e146a0582865e1aff
+
+PODFILE CHECKSUM: c62519a5637ade7dec5ea5ce4b9c2d2b34d6bfce
+
+COCOAPODS: 1.3.1

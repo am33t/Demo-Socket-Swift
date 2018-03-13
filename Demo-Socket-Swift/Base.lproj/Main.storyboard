@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o8q-pM-Zco">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Random ChartVC-->
+        <scene sceneID="Gbb-Rr-Jt2">
+            <objects>
+                <viewController storyboardIdentifier="ATRandomChartVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="o8q-pM-Zco" customClass="ATRandomChartVC" customModule="Demo_Socket_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kcq-k2-LG1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="waM-xN-VLA">
+                                <rect key="frame" x="0.0" y="30" width="375" height="234.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdq-Jv-65M" customClass="Chart" customModule="SwiftChart">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="234.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="cdq-Jv-65M" secondAttribute="trailing" id="5gW-DZ-0q5"/>
+                                    <constraint firstItem="cdq-Jv-65M" firstAttribute="leading" secondItem="waM-xN-VLA" secondAttribute="leading" id="Y5L-IT-6wL"/>
+                                    <constraint firstAttribute="width" secondItem="waM-xN-VLA" secondAttribute="height" multiplier="1.6" id="heY-3a-NaE"/>
+                                    <constraint firstItem="cdq-Jv-65M" firstAttribute="top" secondItem="waM-xN-VLA" secondAttribute="top" id="oWE-aY-Zbs"/>
+                                    <constraint firstAttribute="bottom" secondItem="cdq-Jv-65M" secondAttribute="bottom" id="xwv-JQ-fSc"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2i5-2d-w5p">
+                                <rect key="frame" x="15" y="279.5" width="345" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2i5-2d-w5p" firstAttribute="top" secondItem="waM-xN-VLA" secondAttribute="bottom" constant="15" id="0iF-ge-oi3"/>
+                            <constraint firstItem="2i5-2d-w5p" firstAttribute="leading" secondItem="WDO-J0-tZA" secondAttribute="leading" constant="15" id="H02-I4-3Bp"/>
+                            <constraint firstItem="WDO-J0-tZA" firstAttribute="trailing" secondItem="waM-xN-VLA" secondAttribute="trailing" id="aur-Q0-wE7"/>
+                            <constraint firstItem="WDO-J0-tZA" firstAttribute="trailing" secondItem="2i5-2d-w5p" secondAttribute="trailing" constant="15" id="fNo-U4-QeO"/>
+                            <constraint firstItem="waM-xN-VLA" firstAttribute="leading" secondItem="WDO-J0-tZA" secondAttribute="leading" id="nhz-HP-o3G"/>
+                            <constraint firstItem="waM-xN-VLA" firstAttribute="top" secondItem="WDO-J0-tZA" secondAttribute="top" constant="10" id="zNs-7c-eD3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WDO-J0-tZA"/>
+                    </view>
+                    <connections>
+                        <outlet property="chart" destination="cdq-Jv-65M" id="Jnm-TW-GsF"/>
+                        <outlet property="lblNumberOfRandoms" destination="2i5-2d-w5p" id="V3G-q7-mqM"/>
+                        <outlet property="vwChartContainer" destination="waM-xN-VLA" id="PzJ-8i-dMV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IOP-BH-GVB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="201" y="865"/>
+        </scene>
+    </scenes>
+</document>
